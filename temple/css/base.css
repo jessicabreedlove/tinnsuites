@@ -1,0 +1,271 @@
+/* foundation */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #354f52;
+}
+
+main a {
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+img#logoTop {
+  width: 100px;
+  border: solid 2px #52796f;
+}
+
+.header-name {
+  font-size: 20px;
+}
+
+.banner {
+  background-color: #84a98c;
+  display: block;
+  padding: 10px;
+  border: solid 2px #52796f;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+nav button {
+  margin: 0.2rem 2vw;
+  border-radius: 10px;
+  border-collapse: collapse;
+  font-size: 2rem;
+  color: #2f3e46;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  background-color: #2f3e46;
+  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: #52796f;
+  color: black;
+  font-weight: 700;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+/* footer */
+footer {
+  display: block;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+#logoBottom {
+  width: 100px;
+  border: solid 2px #52796f;
+}
+
+p.footer-name {
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.references {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+}
+
+/* index main */
+.index-main {
+  background-color: #cad2c5;
+  text-align: center;
+  display: block;
+}
+
+.index-photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-photo {
+  position: relative;
+  width: 100%;
+}
+
+#comeStayIndexBtn {
+  border-radius: 10px;
+  border-collapse: collapse;
+  font-size: 2rem;
+  background-color: #2f3e46;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  top: 500px;
+  right: 40px;
+}
+
+#comeStayIndexBtn a {
+  color: white;
+  text-decoration: none;
+}
+
+q {
+  display: inline;
+  font-size: 16px;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+img#weathericon {
+  width: 100px;
+  max-width: 100%;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media {
+  padding-bottom: 5px;
+}
+
+.temple-highlight {
+  border-bottom: solid 2px #52796f;
+}
+
+.weather {
+  border-bottom: solid 2px #52796f;
+}
+
+.services {
+  display: none;
+}
+
+/* temples page */
+
+.temples-main {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.temple-cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 5px;
+  border: 5px solid #84a98c;
+  background-color: #cad2c5;
+}
+
+.card {
+  border: 2px #2f3e46 solid;
+  border-collapse: collapse;
+  background-color: #cad2c5;
+  padding: 10px;
+  box-shadow: 0 0 30px #2f3e46;
+}
+
+.card img {
+  width: 75%;
+}
+
+.temple-intro {
+  text-align: center;
+  border: solid 2px #52796f;
+  padding: 2px;
+  color: white;
+}

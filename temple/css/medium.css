@@ -1,0 +1,26 @@
+@media only screen and (min-width: 35rem) {
+  h1.header-name {
+    font-size: 30px;
+  }
+
+  .sub-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .sub-categories > div {
+    border: solid 2px #52796f;
+    margin: 10px 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .templeimg {
+    max-width: 75%;
+  }
+
+  .social-media img {
+    width: 80px;
+  }
+}

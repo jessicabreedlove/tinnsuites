@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jessica Reece Temple Inn & Suites</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Jessica Reece Site for Temple Inn & Suites WDD 230"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="banner">Need Help Booking? Call 666-555-4444</div>
+      <div class="top">
+        <div>
+          <img
+            id="logoTop"
+            src="images/temple-transparent.webp"
+            alt="Temple Inn & Suites Logo"
+          />
+        </div>
+        <div>
+          <h1 class="header-name">Temple Inn & Suites</h1>
+        </div>
+        <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li class="sub">
+              <a href="services.html">Services <span>&vltri;</span></a>
+              <ul class="submenu">
+                <li>
+                  <a class="menu-item" href="services.html">Missionaries</a>
+                </li>
+                <li>
+                  <a class="menu-item" href="services.html">Receptions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="index-main">
+      <div class="index-photos">
+        <picture>
+          <img
+            src="images/temples_families_mothers_youth.jpeg"
+            alt="mother with her son at the temple"
+            sizes="50vw"
+            class="index-photo"
+            srcset="
+              images/temples_families_mothers_youth-600.webp  200w,
+              images/temples_families_mothers_youth-900.webp 1100w
+            "
+          />
+        </picture>
+        <picture>
+          <img
+            src="images/bed-blue.jpg"
+            alt="mother with her son at the temple"
+            sizes="50vw"
+            class="index-photo"
+            srcset="
+              images/bed-blue-600.webp  200w,
+              images/bed-blue-900.webp 1100w
+            "
+          />
+        </picture>
+      </div>
+      <button id="comeStayIndexBtn">
+        <a href="reservations.html">Come Stay With Us!</a>
+      </button>
+      <div class="sub-categories">
+        <div class="temple-highlight"></div>
+        <div class="weather">
+          <h2>Bethesda, MD Weather</h2>
+          <figure>
+            <img alt="weather icon" id="weathericon" />
+            <figcaption id="weathercap"></figcaption>
+          </figure>
+          <p><q>Date: </q><span id="wdate"></span></p>
+          <p><q>Temperature: </q><span id="temp"></span>&deg;F<br /></p>
+          <p><q>Wind Speed: </q><span id="speed"></span> mph<br /></p>
+          <p><q>Wind Chill: </q><span id="wchill"></span></p>
+          <p><q>Humidity: </q><span id="humid"></span>%</p>
+        </div>
+        <div class="services">
+          <h2>Services</h2>
+          <picture>
+            <img
+              class="serviceimg"
+              src="images/couple-shoes.webp"
+              alt="wedding couple shoes"
+            />
+          </picture>
+          <p>
+            Check out our amazing ammenities and services!<br />We also offer
+            special accomadations for receptions and full-time temple
+            Missionaries.
+          </p>
+        </div>
+      </div>
+      <div class="social-media">
+        <h2>Follow us on social media!</h2>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="images/icons8-instagram-48.png" alt="instagram" />
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="images/icons8-facebook-48.png" alt="facebook" />
+        </a>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-chunk">
+        <img
+          id="logoBottom"
+          src="images/temple-transparent.webp"
+          alt="temple logo"
+        />
+        <div class="footer-contact">
+          <p><a href="contact.html">Contact Us</a></p>
+          <p>Phone: 666-555-4444</p>
+          <p>
+            Temple Inn and Suites<br />4840 Montgomery Ln #320,<br />Bethesda,
+            MD 20814
+          </p>
+        </div>
+      </div>
+      <div class="references">
+        <span
+          >&copy;2022 Jessica Breedlove Reece<br />
+          Last Modification: <span id="lastmod"></span> Weather Provided by
+          <a target="_blank" href="https://openweathermap.org/"
+            >OpenWeatherMap</a
+          ></span
+        >
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
