@@ -56,7 +56,42 @@
         </nav>
       </div>
     </header>
-    <main></main>
+    <main class="reservations-main">
+      <h2>Book Your Stay Now!</h2>
+      <form method="get" action="booked.html">
+        <fieldset>
+          <legend>Check Availability</legend>
+          <label class="location">
+            Temple Location<select name="temple">
+              <option value="">Please Select</option>
+              <option value="columbia">Columbia, SC</option>
+              <option value="orlando">Orlando, FL</option>
+              <option value="palmyra">Palmyra, NY</option>
+              <option value="philadelphia">Philadelphia, PA</option>
+            
+            </select>
+          </label>
+          <label class="availability">
+            Check in<input type="date" name="checkin" required /> Check
+            out<input type="date" name="checkout" required /> 
+          </label>
+          <label class="group">
+            Adults<select name="adults">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5+</option>
+            </select>
+            Children<select name="children">
+              <option value="">0 &#9662;</option>
+              <option value="onecount">1</option>
+              <option value="twocount">2</option>
+              <option value="threecount">3+</option>
+          </label>
+        </fieldset>
+      </form>
+    </main>
     <footer>
       <div class="foot-chunk">
         <img
