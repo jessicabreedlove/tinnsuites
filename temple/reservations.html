@@ -61,7 +61,7 @@
       <form method="get" action="booked.html">
         <fieldset>
           <legend>Check Availability</legend>
-          <label class="location">
+          <label class="top">
             Temple Location<select name="temple">
               <option value="">Please Select</option>
               <option value="columbia">Columbia, SC</option>
@@ -70,11 +70,11 @@
               <option value="philadelphia">Philadelphia, PA</option>
             </select>
           </label>
-          <label class="availability">
+          <label class="top">
             Check in<input type="date" name="checkin" required /> 
             Check out<input type="date" name="checkout" required /> 
           </label>
-          <label class="group">
+          <label class="top">
             Adults<select name="adults">
               <option value="one">1</option>
               <option value="two">2</option>
@@ -106,12 +106,13 @@
         <fieldset>
           <legend>Contact Information</legend>
           <label class="contactbooking">
-            First Name<input type="text" name="fname" required/>
-            Last Name<input type="text" name="lname" required/>
-            Email<input type="email" name="email"/>
-            Phone<input type="tel" name="phone" />
+            First Name*<input type="text" name="fname" required/>
+            Last Name*<input type="text" name="lname" required/>
+            Email*<input type="email" name="email" required/>
+            Phone*<input type="tel" name="phone" required/>
           </label>
         </fieldset>
+        <input type="submit" value="Book My Room" class="bookBtn">
       </form>
     </main>
     <footer>
