@@ -277,7 +277,7 @@ img#weathericon {
   margin-right: 5px;
 }
 form {
-  background-color: #84a98c;
+  background-color: #cad2c5;
   padding-top: 10px;
 }
 
@@ -302,17 +302,17 @@ form label.contactbooking {
   font-size: 0.8rem;
 }
 
+form label.room {
+  display: block;
+  padding: 0.75rem 0;
+}
+
 form label.top input:required {
   border-left: #bc6c25 solid 6px;
 }
 
 form label.top input:required:valid {
   border-left: #606c38 solid 6px;
-}
-
-form label.room {
-  display: block;
-  padding: 0.75rem 0;
 }
 
 form label.contactbooking input:required {
