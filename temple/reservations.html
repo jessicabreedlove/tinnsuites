@@ -68,12 +68,11 @@
               <option value="orlando">Orlando, FL</option>
               <option value="palmyra">Palmyra, NY</option>
               <option value="philadelphia">Philadelphia, PA</option>
-            
             </select>
           </label>
           <label class="availability">
-            Check in<input type="date" name="checkin" required /> Check
-            out<input type="date" name="checkout" required /> 
+            Check in<input type="date" name="checkin" required /> 
+            Check out<input type="date" name="checkout" required /> 
           </label>
           <label class="group">
             Adults<select name="adults">
@@ -84,10 +83,33 @@
               <option value="five">5+</option>
             </select>
             Children<select name="children">
-              <option value="">0 &#9662;</option>
+              <option value="">0</option>
               <option value="onecount">1</option>
               <option value="twocount">2</option>
               <option value="threecount">3+</option>
+          </label>
+        </fieldset>
+        <fieldset>  
+          <label class="room">
+            <input type="radio" name="room" value="queen">2 Queen Beds
+          </label>
+          <label class="room">
+            <input type="radio" name="room" value="king">1 King Bed
+          </label>
+          <label class="room">
+            <input type="radio" name="room" value="suite1"> 1 Room Suite
+          </label>
+          <label class="room">
+            <input type="radio" name="room" value="suite2"> 2 Room Suite
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label class="contactbooking">
+            First Name<input type="text" name="fname" required/>
+            Last Name<input type="text" name="lname" required/>
+            Email<input type="email" name="email"/>
+            Phone<input type="tel" name="phone" />
           </label>
         </fieldset>
       </form>
